@@ -17,7 +17,7 @@ int main() {
   printf("Please enter a position:\n ");
   scanf("%d", &position);
   int bit= (num>>position)&1; // doing and bitwise between num and the number one afer i mooved him till he will be at the same position as the position integer//
-  printf("The bit in position %d of number %d is:%d\n",position,num, bit);
+  printf("The bit in position %d of number %d is: %d\n",position,num, bit);
 
   // Set bit
   /*Scan two integers (representing number and a position)
@@ -47,7 +47,7 @@ int main() {
   printf("Please enter a position:\n ");
   scanf("%d", &position);
   int toggle = ( 1 << position ) ^ num;//1 after position will be 1 at posotion, else be 0, xor between 0 and num, will be always num, in position, xor with 1 and num, will return the opossite of num//
-  printf("Number with bit %d toggled:%d\n", position,toggle);
+  printf("Number with bit %d toggled: %d\n", position,toggle);
 
   // Even - Odd
   /* Scan an integer
@@ -70,7 +70,7 @@ int main() {
   printf("Please enter the second number (octal):\n ");
   scanf("%o", &octal2);
   int sum= octal1+octal2;
-  printf("The sum in hexadecimal:%x\n",sum);
+  printf("The sum in hexadecimal: %X\n",sum);
   int bit3= (1<<3)&sum; bit3=bit3>>3; //taking the third bite and isolate him at 0 postion with 0s left to him//
   int bit5= (1<<5)&sum; bit5=bit5>>5; //taking the fifth bite and isolate him at 0 postion with 0s left to him//
   int bit7= (1<<7)&sum; bit7=bit7>>7; //taking the seven bite and isolate him at 0 postion with 0s left to him//
